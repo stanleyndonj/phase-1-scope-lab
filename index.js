@@ -21,10 +21,20 @@ const leastFavoriteCustomer = 'some initial value';
 
 // Write a function called changeLeastFavoriteCustomer() that attempts to change that constant.
 function changeLeastFavoriteCustomer() {
-  try {
-    leastFavoriteCustomer = 'new value'; // This will cause an error because leastFavoriteCustomer is a constant
-  } catch (error) {
-    console.error("Cannot change a constant variable:", error);
-  }
+  leastFavoriteCustomer = 'new value'; // This will cause an error because leastFavoriteCustomer is a constant
 }
+
+// Testing the functions
+console.log(customerName); // 'bob'
+upperCaseCustomerName();
+console.log(customerName); // 'BOB'
+
+setBestCustomer();
+console.log(bestCustomer); // 'not bob'
+
+overwriteBestCustomer();
+console.log(bestCustomer); // 'maybe bob'
+
+console.log(leastFavoriteCustomer); // 'some initial value'
+changeLeastFavoriteCustomer(); // This will cause an error
 
