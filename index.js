@@ -23,18 +23,3 @@ const leastFavoriteCustomer = 'some initial value';
 function changeLeastFavoriteCustomer() {
   leastFavoriteCustomer = 'new value'; // This will cause an error because leastFavoriteCustomer is a constant
 }
-
-// Testing the functions
-console.log(customerName); // 'bob'
-upperCaseCustomerName();
-console.log(customerName); // 'BOB'
-
-setBestCustomer();
-console.log(bestCustomer); // 'not bob'
-
-overwriteBestCustomer();
-console.log(bestCustomer); // 'maybe bob'
-
-console.log(leastFavoriteCustomer); // 'some initial value'
-changeLeastFavoriteCustomer(); // This will cause an error
-
